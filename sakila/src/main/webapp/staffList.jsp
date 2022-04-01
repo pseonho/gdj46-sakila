@@ -13,7 +13,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-	<a href="">index</a>
+	<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-outline-dark" role="button">index</a>
+	
 	<div class="container">
 	<table class="table">
 	<thead class="thead-dark">
@@ -43,8 +44,7 @@
 			<%
 				}
 			%>
-				</tbody>
-			</thead>
+			</tbody>
 		</table>
 	</div>
 </body>

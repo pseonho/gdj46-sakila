@@ -10,12 +10,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Store List</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-	<a href="">index</a>
-	<h1>Store List</h1>
-	<table border="1">
-		<thead>
+	<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-outline-dark" role="button">index</a>
+	<div class="container">
+	<table class="table">
+	<thead class="thead-dark">
+	<h3>Store List</h3>
 			<tr>
 				<th>storeId</th>
 				<th>staffId</th>
@@ -24,11 +26,10 @@
 				<th>staffAddress</th>
 				<th>lastUpdate</th>
 			</tr>
-		</thead>
 		<tbody>
 			<%
 				for(Map m : list) {
-			%>
+			 %>
 					<tr>
 						<td><%=m.get("storeId")%></td>
 						<td><%=m.get("staffId")%></td>
@@ -40,8 +41,9 @@
 			<%
 				}
 			%>
-		</tbody>
-	</table>
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>
 ​

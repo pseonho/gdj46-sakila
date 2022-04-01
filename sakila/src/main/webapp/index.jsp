@@ -5,10 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<title>Index</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
+<div class="container">
 <body>
-	<H1> 인덱스</H1>
-	<li><a href= "<%=request.getContextPath()%>/storeList.jsp"></a></li>
-	<li><a href= "<%=request.getContextPath()%>/storeList.jsp"></a></li>
+	<h4>리스트</h4>
+	
+		<li><a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-dark" role="button">Store List</a></li>
+		<li><a href="<%=request.getContextPath()%>/staffList.jsp" class="btn btn-outline-dark" role="button">Staff List</a></li>
 </body>
-</html>
+</div>
+</html> 
