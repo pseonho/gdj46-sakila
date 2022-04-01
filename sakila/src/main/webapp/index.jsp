@@ -9,6 +9,6 @@
 <body>
 	<H1> 인덱스</H1>
 	<li><a href= "<%=request.getContextPath()%>/storeList.jsp"></a></li>
-		<li><a href= "<%=request.getContextPath()%>/storeList.jsp"></a></li>
+	<li><a href= "<%=request.getContextPath()%>/storeList.jsp"></a></li>
 </body>
 </html>
