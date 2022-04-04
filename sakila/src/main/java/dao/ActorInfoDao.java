@@ -11,9 +11,9 @@ public class ActorInfoDao {
 				Connection conn = null;
 				PreparedStatement stmt = null;
 				ResultSet rs = null;
-		
-				conn = DBUtil.getConnection(); // 드라이브 연결하는 메서드
-				// 모든 정보를 보여줘야할듯
+				//static 으로 바꿨기때문에 DBUtil = dbutil(); 객체 생성하지 않아도 된다.
+				conn = DBUtil.getConnection(); // db
+				
 				String sql = "Select actor_id actorId, first_name firstName, last_name lastName, film_info filmInfo from actor_info order by actor_id limit ?,?";
 				try {
 					stmt = conn.prepareStatement(sql);
@@ -42,15 +42,15 @@ public class ActorInfoDao {
 		}
 		return list;
 	}
-				// ActorInfo 총 개수 구하기
+				//전체행을 구하는 메서드
 				public int selectActorInfoTotalRow() {
-					int row = 0;
+					int row = 0; //전체 행의 수 변수 초기화
 					Connection conn = null;
 					PreparedStatement stmt = null;
 					ResultSet rs = null;
 
 					conn = DBUtil.getConnection();
-					// actor_info count(*) 구하기
+					// count 쿼리문
 					String sql = "select count(*) cnt from actor_Info";
 					try {
 						stmt = conn.prepareStatement(sql);

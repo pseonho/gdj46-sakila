@@ -14,7 +14,7 @@
 </head>
 <body>
 	<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-outline-dark" role="button">index</a>
-	
+
 	<div class="container">
 	<table class="table">
 	<thead class="thead-dark">

@@ -1,6 +1,12 @@
 package vo;
 
 public class Staff {
+	@Override
+	public String toString() {
+		return "Staff [staffId=" + staffId + ", firstName=" + firstName + ", lastName=" + lastName + ", addressId="
+				+ addressId + ", email=" + email + ", storeId=" + storeId + ", active=" + active + ", username="
+				+ username + ", password=" + password + "]";
+	}
 	public int getStaffId() {
 		return staffId;
 	}

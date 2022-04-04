@@ -18,7 +18,7 @@
 		<li><a href="<%=request.getContextPath()%>/actorInfoList.jsp" class="btn btn-outline-dark" role="button">actorInfo List</a></li>
 		<li><a href="<%=request.getContextPath()%>/customerList.jsp" class="btn btn-outline-dark" role="button">customerList</a></li>
 		<li><a href="<%=request.getContextPath()%>/filmList.jsp" class="btn btn-outline-dark" role="button">filmList</a></li>
-		<li><a href="<%=request.getContextPath()%>/nicerButSLowerFilmList.jsp" class="btn btn-outline-dark" role="button">nicerButSLowerFilmList</a></li>
+		<li><a href="<%=request.getContextPath()%>/nicerButSlowerFilmList.jsp" class="btn btn-outline-dark" role="button">nicerButSLowerFilmList</a></li>
 		<li><a href="<%=request.getContextPath()%>/salesByStore.jsp" class="btn btn-outline-dark" role="button">salesByStore</a></li>
 		<li><a href="<%=request.getContextPath()%>/salesByFilmCategory.jsp" class="btn btn-outline-dark" role="button">salesByFilmCategory</a></li>
 		<li><a href="<%=request.getContextPath()%>/staffListView.jsp" class="btn btn-outline-dark" role="button">staffListView</a></li>

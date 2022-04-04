@@ -1,6 +1,11 @@
 package vo;
 
 public class Store {
+	@Override
+	public String toString() {
+		return "Store [storeId=" + storeId + ", managerStaffId=" + managerStaffId + ", addressId=" + addressId
+				+ ", lastUpdate=" + lastUpdate + "]";
+	}
 	private int storeId;
 	public int getStoreId() {
 		return storeId;

@@ -4,6 +4,7 @@
 <%
 	StoreDao storeDao = new StoreDao();
 	List<Map<String, Object>> list = storeDao.selectStoreList();
+	
 %>
 <!DOCTYPE html>
 <html>

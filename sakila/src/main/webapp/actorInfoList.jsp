@@ -32,8 +32,7 @@
 </head>
 <body>
 	<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-outline-dark" role="button">index</a>
-
-	<div class="container">
+	<div class="container" >
 	<table class="table">
 	<thead class="thead-dark">
 	<h3>ActorInfo_List</h3>
@@ -60,8 +59,8 @@
 		</table>
 	</div>
 	<!-- 페이지 목록 표시 부분 -->
-	<div style=" border: 1px solid red;">
- 	<div style="margin: 0 auto; width:50%;;">
+	<div class="container" >
+	
 		<%
 			if(currentPage > 1){
 		%>
@@ -77,7 +76,5 @@
 			}
 		%>
 			</div>
-			</div>
-			</form>	
 	</body>
 </html> 
