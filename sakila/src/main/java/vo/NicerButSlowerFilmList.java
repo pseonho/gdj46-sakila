@@ -1,10 +1,9 @@
 package vo;
 
 public class NicerButSlowerFilmList {
-	private int filmId;
 	@Override
 	public String toString() {
-		return "NicerButSlowerFilmList [filmId=" + filmId + ", title=" + title + ", discription=" + discription
+		return "NicerButSlowerFilmList [filmId=" + filmId + ", title=" + title + ", description=" + description
 				+ ", category=" + category + ", price=" + price + ", length=" + length + ", rating=" + rating
 				+ ", actors=" + actors + "]";
 	}
@@ -20,11 +19,11 @@ public class NicerButSlowerFilmList {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getDiscription() {
-		return discription;
+	public String getDescription() {
+		return description;
 	}
-	public void setDiscription(String discription) {
-		this.discription = discription;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public String getCategory() {
 		return category;
@@ -56,8 +55,9 @@ public class NicerButSlowerFilmList {
 	public void setActors(String actors) {
 		this.actors = actors;
 	}
+	private int filmId;
 	private String title;
-	private String discription;
+	private String description;
 	private String category;
 	private double price;
 	private int length;

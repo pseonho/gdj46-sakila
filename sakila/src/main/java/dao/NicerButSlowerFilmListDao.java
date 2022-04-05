@@ -23,12 +23,13 @@ public class NicerButSlowerFilmListDao {
 									NicerButSlowerFilmList n = new	NicerButSlowerFilmList();
 									n.setFilmId(rs.getInt("filmId"));
 									n.setTitle(rs.getString("title"));
-									n.setDiscription(rs.getString("discription"));
+									n.setDescription(rs.getString("description"));
 									n.setCategory(rs.getString("category"));
 									n.setPrice(rs.getDouble("price"));
 									n.setLength(rs.getInt("length"));
 									n.setRating(rs.getString("rating"));
 									n.setActors(rs.getString("actors"));
+									list.add(n);
 								}
 						} catch (SQLException e) {
 							e.printStackTrace();

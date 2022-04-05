@@ -38,14 +38,13 @@
 							<tr>
 									<th>filmId</th>
 									<th>title</th>
-									<th>discription</th>
+									<th>description</th>
 									<th>category</th>
 									<th>price</th>
 									<th>length</th>
 									<th>rating</th>
 									<th>actors</th>
 							</tr>
-				</table>
 		</div>
 								<%
 										for(NicerButSlowerFilmList n  : list){
@@ -53,7 +52,7 @@
 									<tr>
 												<td><%=n.getFilmId()%></td>		
 												<td><%=n.getTitle()%></td>	
-												<td><%=n.getDiscription()%></td>			
+												<td><%=n.getDescription()%></td>			
 												<td><%=n.getCategory()%></td>			
 												<td><%=n.getPrice()%></td>			
 												<td><%=n.getLength()%></td>			
@@ -63,6 +62,7 @@
 								<%
 									}
 								%>
+								
 						<!-- 페이지 목록 표시 부분 -->
 							<div class="container" >
 						<%
@@ -79,6 +79,7 @@
 						<%
 							}
 						%>
-				</div>
-	</body>
+					</div>
+					
+		</body>
 </html> 

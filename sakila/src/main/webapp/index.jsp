@@ -22,7 +22,10 @@
 		<li><a href="<%=request.getContextPath()%>/salesByStore.jsp" class="btn btn-outline-dark" role="button">salesByStore</a></li>
 		<li><a href="<%=request.getContextPath()%>/salesByFilmCategory.jsp" class="btn btn-outline-dark" role="button">salesByFilmCategory</a></li>
 		<li><a href="<%=request.getContextPath()%>/staffListView.jsp" class="btn btn-outline-dark" role="button">staffListView</a></li>
-		
+		<!-- procedure 3개 결과 화면 -->
+			<li><a href="<%=request.getContextPath()%>/filmInStockForm.jsp" class="btn btn-outline-dark" role="button">filmInStockform</a></li>
+			<li><a href="<%=request.getContextPath()%>/filmnotInStockform" class="btn btn-outline-dark" role="button">filmnotInStockform</a></li>
+			<li><a href="<%=request.getContextPath()%>/staffListView.jsp" class="btn btn-outline-dark" role="button">staffListView</a></li>
 </body>
 </div>
 </html> 
