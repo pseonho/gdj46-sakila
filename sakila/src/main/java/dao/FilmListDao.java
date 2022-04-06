@@ -1,13 +1,9 @@
 package dao;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-import util.DBUtil;
 import vo.FilmList;
+import java.util.*;
+import java.sql.*;
+import util.DBUtil;
+
 
 public class FilmListDao {
 			public List<FilmList> selectCustomerListByPage(int beginRow, int rowPerPage){
@@ -19,7 +15,7 @@ public class FilmListDao {
 				//static 으로 바꿨기때문에 DBUtil = dbutil(); 객체 생성하지 않아도 된다.
 				conn = DBUtil.getConnection(); // db
 	
-				String sql = "select fid filmId, title, description, category, price, length, rating, actors from film_list order by fid limit ?,?";
+				String sql = "select fid fid, title, description, category, price, length, rating, actors from film_list order by fid limit ?,?";
 						try {
 							stmt = conn.prepareStatement(sql);
 							stmt.setInt(1, beginRow);
@@ -27,7 +23,7 @@ public class FilmListDao {
 							rs = stmt.executeQuery();
 							while(rs.next()) {
 												FilmList f = new FilmList();
-												f.setFilmId(rs.getInt("filmId"));
+												f.setFid(rs.getInt("fId"));
 												f.setTitle(rs.getString("title"));
 												f.setDescription(rs.getString("description"));
 												f.setCategory(rs.getString("category"));

@@ -37,7 +37,7 @@
 			<thead class="thead-dark">
 				<h3>film_List</h3>
 						<tr>
-							<th>filmId</th>
+							<th>FId</th>
 							<th>title</th>
 							<th>description</th>
 							<th> category</th>
@@ -46,13 +46,12 @@
 							<th>rating</th>
 							<th>actors</th>
 						</tr>
-								</thead>
-											<tbody>
-														<%
+					</div>				
+													<%
 															for(FilmList f : list){
 														%>
 															<tr>
-																	<td><%=f.getFilmId()%></td>
+																	<td><%=f.getFid()%></td>
 																	<td><%=f.getTitle()%></td>
 																	<td><%=f.getDescription()%></td>
 																	<td><%=f.getCategory()%></td>
@@ -66,8 +65,7 @@
 														%>
 								</tbody>
 						</table>
-				<div>
-
+			
 <!-- 페이지 목록 표시 부분 -->
 			<div class="container" >
 		<%

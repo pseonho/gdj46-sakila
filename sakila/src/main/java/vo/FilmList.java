@@ -3,15 +3,14 @@ package vo;
 public class FilmList {
 	@Override
 	public String toString() {
-		return "FilmList [filmId=" + filmId + ", title=" + title + ", description=" + description + ", category="
-				+ category + ", price=" + price + ", length=" + length + ", rating=" + rating + ", actors=" + actors
-				+ "]";
+		return "FilmList [fid=" + fid + ", title=" + title + ", description=" + description + ", category=" + category
+				+ ", price=" + price + ", length=" + length + ", rating=" + rating + ", actors=" + actors + "]";
 	}
-	public int getFilmId() {
-		return filmId;
+	public int getFid() {
+		return fid;
 	}
-	public void setFilmId(int filmId) {
-		this.filmId = filmId;
+	public void setFid(int fid) {
+		this.fid = fid;
 	}
 	public String getTitle() {
 		return title;
@@ -55,7 +54,7 @@ public class FilmList {
 	public void setActors(String actors) {
 		this.actors = actors;
 	}
-	private int filmId;
+	private int fid;
 	private String title;
 	private String description;
 	private String category;
