@@ -37,10 +37,10 @@ public class RentalDao {
 				+ "	ON i.film_id = f.film_id ";
 
 			/*검색 기능 경우의수
-			 * 
+			
 			 전부 입력 하지 않을 떄
 			전부 입력 했을 때
-	
+			
 			storeID
 			customerName
 			 beginDate(대여 시작날)

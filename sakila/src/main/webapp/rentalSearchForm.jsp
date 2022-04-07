@@ -33,14 +33,14 @@
 						%>
 					</td>
 				</tr>
-				<!--  customer 검색 -->
+				<!--  customer검색 -->
 				<tr>
 					<td>customerName</td>
 					<td>
 						<input class="form-control" type="text" name="customerName">
 					</td>
 				</tr>
-				<!-- rentalDate 검색 -->
+				<!-- rentalDate검색 -->
 				<tr>
 					<td>rentalDate</td>
 					<td>

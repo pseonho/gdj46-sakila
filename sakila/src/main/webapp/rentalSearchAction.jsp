@@ -109,7 +109,6 @@
 				}
 			%>
 		</table>
-		
 		<!-- 검색 정보에서 목록 이동 -->
 				<input type="hidden" name =storeId value =<%=storeId%>>
 				<input type="hidden" name =customerName value =<%=customerName%>>
