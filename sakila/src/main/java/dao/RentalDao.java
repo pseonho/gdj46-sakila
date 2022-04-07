@@ -60,7 +60,6 @@ public class RentalDao {
 	
 			beginDate(대여 시작날)+endDate(대여 마지막날)
 			*/
-		
 		try {
 			//전부 입력 하지 않을 떄
 			if(storeId == -1 && customerName.equals("") && beginDate.equals("") && endDate.equals("") ) { 

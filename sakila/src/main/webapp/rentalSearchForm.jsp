@@ -17,7 +17,7 @@
 			<div class="container" >
 			<table class="table">
 			<thead class="thead-dark">
-			<a href="<%=request.getContextPath()%>/rentalSearchForm.jsp"  class=" btn-outline-light text-dark"role="button"> <h1>rentalSearchForm</h1></a>
+			<a href="<%=request.getContextPath()%>/rentalSearchForm.jsp"  class=" btn-outline-light text-dark"role="button"> <h2>rentalSearchForm</h2></a>
 			<form action="<%=request.getContextPath()%>/rentalSearchAction.jsp" method="post">
 				<tr>
 					<!-- storeId 검색 -->

@@ -10,7 +10,7 @@
 </head>
 <div class="container">
 <body>
-	<h2>INDEX</h2><br>
+	<h1>INDEX</h1><br>
 		<h4>table LIST</h4>
 			<ol>
 				<li><a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-dark" role="button">Store List</a></li>
@@ -38,7 +38,6 @@
 		<ol>
 				<li><a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-dark" role="button">filmSearchForm</a></li>
 				<li><a href="<%=request.getContextPath()%>/rentalSearchForm.jsp" class="btn btn-outline-dark" role="button">rentalSearchForm</a></li>
-		
 		</ol>
 </body>
 </div>
