@@ -10,7 +10,7 @@
 </head>
 <div class="container">
 <body>
-	<h1>INDEX</h1><br>
+	<h2>INDEX</h2><br>
 		<h4>table LIST</h4>
 			<ol>
 				<li><a href="<%=request.getContextPath()%>/storeList.jsp" class="btn btn-outline-dark" role="button">Store List</a></li>

@@ -81,7 +81,7 @@
 			<div class="container" >
 			<table class="table">
 			<thead class="thead-dark">
-		 	<div style ="TEXT-ALIGN:center"> <a href="<%=request.getContextPath()%>/rentalSearchForm.jsp"  class=" btn-outline-light text-dark"role="button"><h2>rentalSearchAction</h2></a><br>
+		 	<div style ="TEXT-ALIGN:center"> <a href="<%=request.getContextPath()%>/rentalSearchForm.jsp"  class=" btn-outline-light text-dark"role="button"><h1>rentalSearchAction</h1></a><br>
 			<form method="get" action="<%=request.getContextPath()%>/rentalSearchAction.jsp"></div>
 				<tr>
 					<th>rentalId</th>
