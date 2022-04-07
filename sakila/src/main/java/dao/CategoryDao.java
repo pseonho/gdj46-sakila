@@ -26,7 +26,7 @@ public class CategoryDao {
             list.add(c);
          }
       } catch (SQLException e) {
-         e.printStackTrace();
+         e.printStackTrace();//예외에 해당하는 코드 요청
       } finally {
          try {
             rs.close();

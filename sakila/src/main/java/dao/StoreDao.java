@@ -1,7 +1,39 @@
 package dao;
-import java.util.*;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import util.DBUtil;
 public class StoreDao {
+		// StoreId를 구하는 메서드
+		public List<Integer> selectStoreIdList(){
+			List<Integer> list = new ArrayList<Integer>();	
+			Connection conn = null;
+			PreparedStatement stmt = null;
+			ResultSet rs = null;
+	
+			try {
+				conn = DBUtil.getConnection();
+				String sql = "SELECT store_id from store";
+				stmt = conn.prepareStatement(sql);
+				rs = stmt.executeQuery();
+				while(rs.next()) {
+					list.add(rs.getInt("store_id"));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+	
+			return list;
+		}
+	
+	
 	public List<Map<String, Object>> selectStoreList() {
 		List<Map<String, Object>> list = new ArrayList<>(); // 다형성
 		Connection conn = null;

@@ -37,6 +37,7 @@
 		<h4>detailed search LIST</h4>
 		<ol>
 				<li><a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-dark" role="button">filmSearchForm</a></li>
+				<li><a href="<%=request.getContextPath()%>/rentalSearchForm.jsp" class="btn btn-outline-dark" role="button">rentalSearchForm</a></li>
 		</ol>
 </body>
 </div>
