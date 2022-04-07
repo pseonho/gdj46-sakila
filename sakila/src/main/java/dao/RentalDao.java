@@ -35,6 +35,7 @@ public class RentalDao {
 				+ "	ON r.inventory_id = i.inventory_id"
 				+ "	INNER JOIN film f"
 				+ "	ON i.film_id = f.film_id ";
+		
 			/*검색 기능 경우의수
 			
 			 전부 입력 하지 않을 떄
