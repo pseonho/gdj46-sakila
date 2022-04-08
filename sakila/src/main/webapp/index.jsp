@@ -39,6 +39,10 @@
 				<li><a href="<%=request.getContextPath()%>/filmSearchForm.jsp" class="btn btn-outline-dark" role="button">filmSearchForm</a></li>
 				<li><a href="<%=request.getContextPath()%>/rentalSearchForm.jsp" class="btn btn-outline-dark" role="button">rentalSearchForm</a></li>
 		</ol>
+		<h4>통계</h4>
+		<ol>
+				<li><a href="<%=request.getContextPath()%>/statsData.jsp" class="btn btn-outline-dark" role="button">statsData</a></li>
+		</ol>
 </body>
 </div>
 </html> 
