@@ -3,18 +3,26 @@
 <%@ page import ="dao.*" %>
 <%
 		StatsDataDao statsDataDao = new StatsDataDao();
-		//1. customer 별 총 amount
+		//1. 고객별 별 총액 180 이상
 		List<Map<String,Object>> amountByCustomer = statsDataDao.amountByCustomer();
 		
 		//2. rental_rate별 영화 갯수
 		List<Map<String, Object>>filmCountByRentalRate= statsDataDao.filmCountByRentalRate();
 		
-		//3.rating별 영화 갯수
+		//3.상영 시간 별 영화 갯수
 		List<Map<String,Object>> filmCountByRating = statsDataDao.filmCountByRating();
 		
-		//4.스토어별 매출
-		List<Map<String,Object>> amountBystaff = statsDataDao.amountBystaff();
+		//4.스테프별 매출
+		List<Map<String,Object>> customerByStore= statsDataDao.customerByStore();
+		 
+		//5. 스토어 별 총매출
+		List<Map<String,Object>> amountBystore = statsDataDao.amountBystore();
 		
+		// 6. 스테프별 년도별 매출
+		List<Map<String,Object>> amountByYStaff = statsDataDao.amountByYStaff();
+		
+		//7.카테고리별 영화
+		List<Map<String,Object>> 	filmByCatrgory = statsDataDao.filmByCatrgory();
 		
 %>
 			<!DOCTYPE html>
@@ -27,7 +35,7 @@
 			<body>
 				<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-outline-dark" role="button">index</a>
 			 
-			   <h1>1.amountByCoustomer (상위10명)</h1>
+			   <h1>1.고객 별 총액 180 이상(상위10명)</h1>
 			      <table border="1">
 			         <tr>
 			            <td>고객아이디</td>
@@ -65,7 +73,7 @@
 								%>
 		    		 </table>
 		    		 
-						<h1>3. filmCountByRating</h1>
+						<h1>3. 상영시간 별 영화 개수</h1>
 						<table border="1">
 								<tr>
 							<td>등급</td>
@@ -83,19 +91,76 @@
 							%>
 							</table>
 							
-							
-						<h1>4. amountBystaff</h1>
+						<h1>4. 스토어 별 고객 카운트</h1>
 						<table border="1">
 									<tr>
-										<th>스테프<th>
-										<th>총액</th>
+										<th>스토어</th>
+										<th>방문 고객</th>
 									</tr>
 							<%
-								for(Map<String,Object> m :  amountBystaff) {
+								for(Map<String,Object> m :  customerByStore) {
+							%>
+							<tr>
+								<td><%=m.get("storeId")%></td>
+								<td><%=m.get("cnt")%></td>
+							</tr>
+							<%
+								}
+							%>
+							</table>
+							
+								<h1>5.  스토어 별 총매출e</h1>
+						<table border="1">
+									<tr>
+										<th>스토어</th>
+										<th>총 매출</th>
+									</tr>
+							<%
+								for(Map<String,Object> m :  amountBystore) {
+							%>
+							<tr>
+								<td><%=m.get("storeId")%></td>
+								<td><%=m.get("total")%></td>
+							</tr>
+							<%
+								}
+							%>
+						</table>
+						
+							<h1>6. staff별 년도별 매출</h1>
+						<table border="1">
+									<tr>
+										<th>스테프</th>
+										<th>년도</th>
+										<th>총 매출</th>
+									</tr>
+							<%
+								for(Map<String,Object> m : amountByYStaff) {
 							%>
 							<tr>
 								<td><%=m.get("staffId")%></td>
-								<td><%=m.get("sum")%></td>
+								<td><%=m.get("year")%></td>
+								<td><%=m.get("total")%></td>
+							</tr>
+							<%
+								}
+							%>
+						</table>
+						
+								<h1>7.카테고리별 영화</h1>
+						<table border="1">
+									<tr>
+										<th>카테고리</th>
+										<th>종류</th>
+										<th>COUNT</th>
+									</tr>
+							<%
+								for(Map<String,Object> m : filmByCatrgory) {
+							%>
+							<tr>
+								<td><%=m.get("catrgoryId")%></td>
+								<td><%=m.get("name")%></td>
+								<td><%=m.get("cnt")%></td>
 							</tr>
 							<%
 								}
