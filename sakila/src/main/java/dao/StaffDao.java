@@ -16,7 +16,7 @@ public class StaffDao {
 		ResultSet rs = null;
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/sakila","root","java1234");
+			conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/sakila","root","mariadb1234");
 			String sql = "SELECT"
 							+ "		s1.manager_staff_id staffId,"
 							+ "		concat(s2.first_name,' ',s2.last_name) staffName, "
