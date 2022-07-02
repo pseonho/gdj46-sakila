@@ -215,7 +215,7 @@ public class StatsDataDao {
 						Map<String,Object> m = new HashMap<String, Object>();
 						m.put("staffId", rs.getInt("staffId"));
 						m.put("year",rs.getInt("year"));
-						m.put(" total",rs.getDouble("total"));
+						m.put("total",rs.getDouble("total"));
 						list.add(m);
 						System.out.println(m);
 					}
