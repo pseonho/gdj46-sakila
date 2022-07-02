@@ -22,7 +22,7 @@
 		List<Map<String,Object>> amountByYStaff = statsDataDao.amountByYStaff();
 		
 		//7.카테고리별 영화
-		List<Map<String,Object>> 	filmByCatrgory = statsDataDao.filmByCatrgory();
+		List<Map<String,Object>> filmByCatrgory = statsDataDao.filmByCatrgory();
 		
 %>
 			<!DOCTYPE html>
@@ -109,7 +109,7 @@
 							%>
 							</table>
 							
-								<h1>5.  스토어 별 총매출e</h1>
+								<h1>5.  스토어 별 총매출</h1>
 						<table border="1">
 									<tr>
 										<th>스토어</th>

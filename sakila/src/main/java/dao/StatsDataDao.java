@@ -217,6 +217,7 @@ public class StatsDataDao {
 						m.put("year",rs.getInt("year"));
 						m.put(" total",rs.getDouble("total"));
 						list.add(m);
+						System.out.println(m);
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
